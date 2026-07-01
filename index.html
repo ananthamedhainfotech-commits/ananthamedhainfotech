@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Anantha Medha InfoTech</title>
+  <link rel="icon" href="public/clients/logo.png" type="image/gif" sizes="16x16">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Anantha Medha InfoTech - Customised IT Solutions as per your business requirement and budget.">
+
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/vendors.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+  background:#050816;
+  overflow-x:hidden;
+  font-family:'Poppins',sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+header.transparent{
+  position:fixed;
+  top:0;
+  left:0;
+  transform:none;
+
+  width:100%;
+
+  z-index:9999;
+
+  background:rgba(7,10,30,0.88);
+
+  backdrop-filter:blur(16px);
+
+  border:none;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+
+  border-radius:0;
+
+  padding:10px 20px;
+
+  transition:0.4s ease;
+}
+
+header.transparent.scrolled{
+  background:rgba(7,10,30,0.82);
+
+  backdrop-filter:blur(22px);
+
+  border:1px solid rgba(255,255,255,0.06);
+
+  box-shadow:
+  0 10px 45px rgba(0,0,0,0.45);
+}
+.de-flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+#logo-video{
+  height:58px;
+  width:auto;
+  object-fit:contain;
+}
+
+/* =========================
+   MENU
+========================= */
+
+#mainmenu{
+  display:flex;
+  align-items:center;
+  gap:34px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#mainmenu li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:500;
+  position:relative;
+  transition:0.3s ease;
+}
+
+/* ACTIVE LINK */
+
+#mainmenu li a.active{
+  color:#fff;
+}
+
+/* PURPLE LINE */
+
+#mainmenu li a.active::after,
+#mainmenu li a:hover::after{
+
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  bottom:-12px;
+
+  width:100%;
+  height:3px;
+
+  border-radius:20px;
+
+  background:linear-gradient(
+  90deg,
+  #7b2ff7,
+  #9b5cff
+  );
+}
+
+/* HOVER */
+
+#mainmenu li a:hover{
+  color:#c084fc;
+}
+
+.call-btn{
+
+  padding:14px 24px;
+
+  border-radius:16px;
+
+  color:#fff;
+
+  text-decoration:none;
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(12px);
+
+  margin-right:14px;
+
+  transition:0.4s;
+}
+
+.call-btn:hover{
+  background:rgba(255,255,255,0.1);
+  color:#fff;
+}
+/* =========================
+   CTA BUTTON
+========================= */
+.nav-btn{
+
+  background:linear-gradient(
+  90deg,
+  #7b2ff7,
+  #9b5cff
+  );
+
+  padding:15px 32px;
+
+  border-radius:16px;
+
+  color:#fff;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  font-size:15px;
+
+  transition:0.4s ease;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 10px 30px rgba(123,47,247,0.35);
+}
+
+.nav-btn:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 15px 35px rgba(123,47,247,0.45);
+
+  color:#fff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+#section-hero{
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+
+/* DARK OVERLAY */
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+  to right,
+  rgba(3,5,20,0.95),
+  rgba(3,5,20,0.6)
+  );
+  z-index:1;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+  position:relative;
+  z-index:5;
+  padding-top:90px;
+}
+@media(max-width:992px){
+
+  .hero-content{
+    padding-top:120px;
+  }
+
+  .hero-title{
+    font-size:42px;
+    line-height:1.1;
+  }
+
+  .hero-desc{
+    font-size:16px;
+    line-height:1.6;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-grid{
+    margin-top:40px;
+  }
+}
+/* BADGE */
+
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:12px 24px;
+
+  border:1px solid rgba(155,92,255,0.4);
+
+  border-radius:40px;
+
+  background:rgba(255,255,255,0.05);
+
+  color:#c084fc;
+
+  font-size:16px;
+  margin-bottom:30px;
+}
+
+/* HEADING */
+
+.hero-title{
+  font-size:72px;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-2px;
+  margin-bottom:18px;
+  color:#fff;
+}
+
+.hero-title span{
+  background:linear-gradient(
+  90deg,
+  #3b82f6,
+  #9333ea,
+  #ec4899
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* SUBTITLE */
+
+.hero-desc{
+  font-size:24px;
+  color:#d1d5db;
+  line-height:1.7;
+  max-width:700px;
+  margin-bottom:40px;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+  margin-bottom:50px;
+}
+
+.btn-primary-custom{
+  background:linear-gradient(90deg,#7b2ff7,#9b5cff);
+  color:#fff;
+  padding:16px 34px;
+  border-radius:14px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.4s;
+}
+
+.btn-primary-custom:hover{
+  transform:translateY(-4px);
+  color:#fff;
+}
+
+.btn-outline-custom{
+  border:1px solid rgba(255,255,255,0.2);
+  color:#fff;
+  padding:16px 34px;
+  border-radius:14px;
+  text-decoration:none;
+  transition:0.4s;
+}
+
+.btn-outline-custom:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* =========================
+   FLOATING CARDS
+========================= */
+
+/* =========================
+   RIGHT SIDE GRID UI
+========================= */
+
+.hero-right{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+/* GRID */
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:20px;
+  width:100%;
+  max-width:520px;
+}
+
+/* CARDS */
+
+.grid-card{
+  background:rgba(255,255,255,0.06);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(12px);
+
+  border-radius:24px;
+
+  padding:30px 24px;
+
+  color:#fff;
+
+  transition:0.4s ease;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.3);
+
+  animation:floatCard 5s ease-in-out infinite;
+}
+
+/* LARGE CARD */
+
+.large-card{
+  grid-column:span 2;
+
+  background:linear-gradient(
+  135deg,
+  rgba(123,47,247,0.2),
+  rgba(59,130,246,0.15)
+  );
+
+  border:1px solid rgba(155,92,255,0.25);
+}
+
+/* HOVER */
+
+.grid-card:hover{
+  transform:translateY(-8px);
+
+  box-shadow:
+  0 0 25px rgba(123,47,247,0.35),
+  0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+
+.grid-card h3{
+  font-size:30px;
+  margin-bottom:16px;
+  font-weight:700;
+}
+
+.grid-card h4{
+  font-size:22px;
+  font-weight:600;
+  margin:0;
+}
+
+.grid-card p{
+  color:#d1d5db;
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes floatCard{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+/* DIFFERENT SPEEDS */
+
+.grid-card:nth-child(2){
+  animation-duration:6s;
+}
+
+.grid-card:nth-child(3){
+  animation-duration:7s;
+}
+
+.grid-card:nth-child(4){
+  animation-duration:5s;
+}
+
+.grid-card:nth-child(5){
+  animation-duration:8s;
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+  .hero-grid{
+    margin-top:50px;
+  }
+
+  .grid-card{
+    padding:24px 20px;
+  }
+
+  .grid-card h3{
+    font-size:24px;
+  }
+
+  .grid-card h4{
+    font-size:18px;
+  }
+}
+
+@media(max-width:576px){
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .large-card{
+    grid-column:span 1;
+  }
+}
+/* =========================
+   MOBILE
+========================= */
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media(max-width:992px){
+
+  header.transparent{
+    padding:10px 16px;
+  }
+
+  #logo-video{
+    height:48px;
+  }
+
+  /* MOBILE MENU */
+
+  #mainmenu{
+
+    position:absolute;
+
+    top:78px;
+    left:0;
+
+    width:100%;
+
+    background:rgba(7,10,30,0.97);
+
+    backdrop-filter:blur(20px);
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:25px;
+
+    gap:20px;
+
+    display:none;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+  }
+
+  #mainmenu.active{
+    display:flex;
+  }
+
+  #mainmenu li{
+    width:100%;
+  }
+
+  #mainmenu li a{
+    width:100%;
+    display:block;
+    font-size:18px;
+  }
+
+  /* HIDE PHONE */
+
+  .call-btn{
+    display:none;
+  }
+
+  /* MENU AREA */
+
+  .menu_side_area{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  /* BUTTON */
+
+  .nav-btn{
+    padding:10px 16px;
+    font-size:13px;
+    border-radius:12px;
+  }
+
+  /* MENU BUTTON */
+
+  #menu-btn{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    cursor:pointer;
+  }
+
+  #menu-btn span,
+  #menu-btn span::before,
+  #menu-btn span::after{
+
+    content:'';
+
+    display:block;
+
+    width:20px;
+    height:2px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    position:relative;
+  }
+
+  #menu-btn span::before{
+    position:absolute;
+    top:-6px;
+  }
+
+  #menu-btn span::after{
+    position:absolute;
+    top:6px;
+  }
+}
+
+</style>
+
+</head>
+
+<body class="dark-scheme">
+<div id="wrapper">
+
+<!-- HEADER -->
+<header class="transparent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="de-flex">
+
+          <!-- LOGO -->
+          <div class="de-flex-col">
+            <div id="logo">
+              <a href="index.html">
+
+                <!-- VIDEO LOGO -->
+                <video autoplay muted loop playsinline id="logo-video">
+                  <source src="video/logo.mp4" type="video/mp4">
+                </video>
+
+              </a>
+            </div>
+          </div>
+
+          <!-- MENU -->
+          <div class="de-flex-col header-col-mid">
+            <ul id="mainmenu">
+              <li><a class="menu-item active" href="index.html">Home</a></li>
+              <li><a class="menu-item" href="#section-about">About</a></li>
+              <li><a class="menu-item" href="#section-services">Services</a></li>
+              <li><a class="menu-item" href="#section-contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- MENU BUTTON -->
+          <div class="de-flex-col">
+            <div class="menu_side_area">
+              <a href="tel:+919133733373" class="call-btn"> 📞 +91 91337 33373</a>
+
+<a href="#section-contact"
+class="nav-btn">
+Get a Quote
+</a>
+             <div id="menu-btn">
+              <span></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- HERO SECTION (ONLY ONE) -->
+ <section id="section-hero"
+class="section-dark text-light jarallax"
+data-video-src="mp4:video/2.mp4">
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+
+<div class="row align-items-center">
+
+<!-- LEFT -->
+<div class="col-lg-6">
+
+<div class="hero-badge">
+🚀 AI Powered IT Solutions
+</div>
+
+<h1 class="hero-title">
+Customised IT Solutions
+for <span>Modern Businesses</span>
+</h1>
+
+<p class="hero-desc">
+We build scalable software,
+AI applications, mobile apps,
+and enterprise solutions
+that drive growth and efficiency.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#section-services"
+class="btn-primary-custom">
+Get Started →
+</a>
+
+<a href="#section-about"
+class="btn-outline-custom">
+View Portfolio
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<!-- RIGHT SIDE -->
+<div class="col-lg-6 hero-right">
+
+<div class="hero-grid">
+
+<div class="grid-card large-card">
+  <h3>🚀 AI Solutions</h3>
+  <p>Smart automation & business intelligence systems.</p>
+</div>
+
+<div class="grid-card">
+  <h4>📱 Mobile Apps</h4>
+</div>
+
+<div class="grid-card">
+  <h4>💻 Web Apps</h4>
+</div>
+
+<div class="grid-card">
+  <h4>☁ Cloud</h4>
+</div>
+
+<div class="grid-card">
+  <h4>🛡 Security</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  </div>
+
+  <!-- JS -->
+  <script>
+   const header = document.querySelector("header.transparent");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+/* MOBILE MENU */
+
+const menuBtn = document.getElementById("menu-btn");
+const mainMenu = document.getElementById("mainmenu");
+
+menuBtn.addEventListener("click", () => {
+  mainMenu.classList.toggle("active");
+});
+  </script>
+  
+ <section id="section-about" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row gx-5 align-items-center justify-content-between">
+
+      <!-- Left Column: Text -->
+      <div class="col-lg-7">
+        <div class="me-lg-5 pe-lg-5 py-5 my-5">
+          <!-- Subtitle -->
+          <div class="subtitle wow fadeInUp" data-wow-delay=".2s" style="font-size: 28px; font-weight: 600;">
+            About Us
+          </div>
+
+          <!-- Heading -->
+          <h2 class="wow fadeInUp" data-wow-delay=".4s" 
+              style="line-height: 1.2; font-size: 48px; font-weight: 800;">
+            Our Experts<br>Dedicated to Your Success
+          </h2>
+
+          <!-- Paragraph -->
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            We are a vendor-neutral IT Infra Services & Solutions company. We specialize in providing custom IT solutions as per your business requirements and budget. We work closely with our clients to develop tailored solutions that address their specific needs and requirements.
+          </p>
+
+          <!-- Features Two Columns -->
+          <div class="row mt-4">
+            <!-- First Column -->
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay=".8s">
+                <i class="fa fa-user-check me-2" style="font-size: 22px; color:#fff;"></i>
+                <span>Expertise Team</span>
+              </div>
+              <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay=".9s">
+                <i class="fa fa-star me-2" style="font-size: 22px; color:#fff;"></i>
+                <span>Quality of Service</span>
+              </div>
+              <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay="1s">
+                <i class="fa fa-headset me-2" style="font-size: 22px; color:#fff;"></i>
+                <span>24 × 7 Support</span>
+              </div>
+            
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay="1.3s">
+                <i class="fa fa-handshake me-2" style="font-size: 22px; color:#fff;"></i>
+                <span>One-Stop IT Partner</span>
+              </div>
+              <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay="1.4s">
+                <i class="fa fa-dollar-sign me-2" style="font-size: 22px; color:#fff;"></i>
+                <span>Cost-Effective Services</span>
+              </div>
+              <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay="1.1s">
+                <i class="fa fa-cogs me-2" style="font-size: 22px; color:#fff;"></i>
+                <span>Customized Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-lg-5">
+        <div class="wow scaleIn">
+          <img src="images/misc/c1.webp" class="w-100 rotate-animation" alt=""
+               style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-dark p-0" aria-label="section">
+    <div class="bg-color text-light d-flex py-4 lh-1 rot-2">
+      <div class="de-marquee-list-1 wow fadeInLeft" data-wow-duration="3s">
+          <span class="fs-60 mx-3">IT Support</span>
+          <span class="fs-60 mx-3 op-2">/</span>
+          <span class="fs-60 mx-3">IT Recruitment</span>
+          <span class="fs-60 mx-3 op-2">/</span>
+          <span class="fs-60 mx-3">Email Solutions</span>
+          <span class="fs-60 mx-3 op-2">/</span>
+          <span class="fs-60 mx-3">End Point Sequirity</span>
+          <span class="fs-60 mx-3 op-2">/</span>
+          <span class="fs-60 mx-3"> Email Service</span>
+          <span class="fs-60 mx-3 op-2">/</span>
+          <span class="fs-60 mx-3">Networking</span>
+          <span class="fs-60 mx-3 op-2">/</span>
+              </div>
+            </div>
+
+            <div class="bg-color-2 text-light d-flex py-4 lh-1 rot-min-1 mt-min-20">
+              <div class="de-marquee-list-2 wow fadeInRight" data-wow-duration="3s">
+                <span class="fs-60 mx-3">UI/UX Design</span>
+                <span class="fs-60 mx-3 op-2">/</span>
+                <span class="fs-60 mx-3">Web Application</span>
+                 <span class="fs-60 mx-3 op-2">/</span>
+                <span class="fs-60 mx-3">Android Application</span>
+                 <span class="fs-60 mx-3 op-2">/</span>
+                <span class="fs-60 mx-3">IOS Application</span>
+                 <span class="fs-60 mx-3 op-2">/</span>
+              </div>
+            </div>
+        </section>
+
+<section id="section-services" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+  <div class="col-lg-10 offset-lg-1 col-md-12 text-center">
+
+    <!-- Section Heading -->
+<div class="subtitle wow fadeInUp" data-wow-delay=".2s"
+     style="font-size: calc(20px + 1.5vw); font-weight: 600; margin-bottom: 20px; text-align: center;">
+      Our IT Services
+    </div>
+
+    <!-- Description -->
+<p class="lead mb-0 wow fadeInUp" data-wow-delay=".4s"
+   style="max-width: 900px; margin: 0 auto; font-size: 20px; line-height: 1.7; text-align: center;">
+  At <strong>Anantha Medha InfoTech</strong>, Empowering businesses with complete IT care — from desktop,
+  network, and server support to advanced IT products, endpoint security, and seamless cloud email
+  solutions like Microsoft 365 and Google Workspace.
+</p>
+
+  </div>
+</div>
+
+    <div class="spacer-single"></div>
+    <div class="spacer-single"></div>
+<div class="wow fadeInUp" data-wow-delay=".2s"
+                         style="font-size: 40px; font-weight: 600; margin-bottom: 40px;">
+                        IT Support
+  <ul class="lead wow fadeInUp" data-wow-delay=".3s" style="list-style: none; padding-left: 0; margin-top: 20px; margin-bottom: 5px;">
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      24/7 help desk, remote support, and on-site troubleshooting to keep your systems running smoothly.
+
+    </li>
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Proactive maintenance, data backup, and cybersecurity to protect your business.
+
+    </li>
+    <li style="display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Scalable IT solutions tailored to your industry, size, and specific needs.
+    </li>
+  </ul>
+  </div>
+    <!-- Services Grid -->
+    <div class="row g-4">
+      <!-- Desktop Support -->
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Desktop Support</h4>
+                <p class="mb-0">
+                  Keep your desktops and workstations running smoothly, securely, and efficiently.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/DesktopSupport.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Network Maintenance -->
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Network Maintenance</h4>
+                <p class="mb-0">
+                  Reliable network support to ensure secure, fast, and optimized connectivity.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+            <img
+  src="images/misc/NetworkSupport.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Server Maintenance -->
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Server Maintenance</h4>
+                <p class="mb-0">
+                  Ensure secure, efficient, and uninterrupted business operations with server support.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+          <img
+  src="images/misc/ServerSupport.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Firewall Maintenance -->
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Firewall Maintenance</h4>
+                <p class="mb-0">
+                  Keep your network safe with continuous firewall updates and monitoring.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/firewall.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Maintenance -->
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Cloud Maintenance</h4>
+                <p class="mb-0">
+                  Expert support for AWS, Azure, and GCP to ensure secure and optimized infrastructure.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/cloud.png"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End User Support -->
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>End User Support</h4>
+                <p class="mb-0">
+                  Hassle-free end-user support for quick issue resolution and seamless productivity.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+            <img
+  src="images/misc/EndUserSupport.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Email Solutions-->
+<section id="section-why-attend" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="wow fadeInUp" data-wow-delay=".2s"
+                         style="font-size: 40px; font-weight: 600; margin-bottom: 40px;">
+Email Solutions
+  <ul class="lead wow fadeInUp" data-wow-delay=".3s" style="list-style: none; padding-left: 0; margin-top: 20px; margin-bottom: 5px;">
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+ Reliable and secure email hosting with custom domain support.
+
+    </li>
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+   Advanced spam filtering and virus protection to keep your inbox safe.
+
+    </li>
+    <li style="display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+  Easy-to-use interfaces with seamless integration across devices and platforms.
+    </li>
+  </ul>
+  </div>
+
+
+      <!-- 🔽 Removed spacer or made it smaller -->
+
+      <div class="row g-4">
+        <!-- Office 365 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="hover">
+            <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+              <div class="abs p-40 bottom-0 z-2">
+                <div class="relative wow fadeInUp">
+                  <h4>Office 365</h4>
+                  <p class="mb-0">
+                    We keep your Office 365 environment running smoothly, securely, and efficiently.
+                  </p>
+                </div>
+              </div>
+              <div class="gradient-edge-bottom h-100"></div>
+             <img
+  src="images/misc/Office365.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+              <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Workspace -->
+        <div class="col-lg-4 col-md-6">
+          <div class="hover">
+            <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+              <div class="abs p-40 bottom-0 z-2">
+                <div class="relative wow fadeInUp">
+                  <h4>Google Workspace</h4>
+                  <p class="mb-0">
+                    We keep your Google Workspace running smoothly, securely, and efficiently.
+                  </p>
+                </div>
+              </div>
+              <div class="gradient-edge-bottom h-100"></div>
+              <img
+  src="images/misc/GoogleWorkspace.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+              <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zoho Workspace -->
+        <div class="col-lg-4 col-md-6">
+          <div class="hover">
+            <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+              <div class="abs p-40 bottom-0 z-2">
+                <div class="relative wow fadeInUp">
+                  <h4>Email Support</h4>
+                  <p class="mb-0">
+                    We keep your Zoho Workspace running smoothly, securely, and efficiently.
+                  </p>
+                </div>
+              </div>
+              <div class="gradient-edge-bottom h-100"></div>
+              <img
+  src="images/misc/EmailSupport.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+              <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--IT Product & Tools-->
+<!-- Email Solutions-->
+<section id="section-why-attend" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8 text-start" style="margin-left: 40px;">
+        <!-- New IT Support Heading -->
+        <h2 class="wow fadeInUp" data-wow-delay=".2s">IT Products & Tools</h2>
+       <!-- Bullet Points with Blue Ticks -->
+  <ul class="lead wow fadeInUp" data-wow-delay=".3s" style="list-style: none; padding-left: 0; margin-top: 20px; margin-bottom: 5px;">
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Endpoint Security
+    </li>
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Remote Management & Monitoring Tools
+    </li>
+  </ul>
+        </div>
+
+    <div class="container">
+  <div class="row g-5 justify-content-center">
+    <!-- Grid 1: End Point Security -->
+    <div class="col-lg-4 col-md-6">
+      <div class="hover">
+        <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+          <div class="abs p-40 bottom-0 z-2">
+            <div class="relative wow fadeInUp">
+              <h4>End Point Security</h4>
+              <p class="mb-0">
+                We secure your endpoints to protect devices, data, and users from cyber threats.
+              </p>
+            </div>
+          </div>
+          <div class="gradient-edge-bottom h-100"></div>
+         <img
+  src="images/misc/EndpointSequrity.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+          <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid 2: RMM Tools -->
+    <div class="col-lg-4 col-md-6">
+      <div class="hover">
+        <div class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask">
+          <div class="abs p-40 bottom-0 z-2">
+            <div class="relative wow fadeInUp">
+              <h4>RMM Tools</h4>
+              <p class="mb-0">
+                We use RMM tools to monitor, manage, and support your IT systems reliably.
+              </p>
+            </div>
+          </div>
+          <div class="gradient-edge-bottom h-100"></div>
+          <img
+  src="images/misc/RmmTools.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+          <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<!--Web Application-->
+<section id="section-why-attend" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+     <div class="col-lg-10 offset-lg-1 col-md-12 text-center">
+
+  <!-- New IT Support Heading -->
+<div class="subtitle wow fadeInUp" data-wow-delay=".2s"
+     style="font-size: calc(20px + 1.5vw); font-weight: 600; margin-bottom: 20px; text-align: center;">
+    Our Web Services
+  </div>
+
+  <!-- Description -->
+  <p class="lead mb-0 wow fadeInUp"
+     style="max-width: 900px; margin: 0 auto; font-size: 18px; line-height: 1.6; text-align: center;">
+    At <strong>Anantha Medha InfoTech</strong>, we design responsive websites, custom web apps,
+    and user-friendly mobile applications. Our services include login portals,
+    admin dashboards, and full backend management. From development to maintenance,
+    we ensure smooth, secure, and scalable digital solutions.
+  </p>
+</div>
+
+     <div class="wow fadeInUp" data-wow-delay=".2s"
+     style="font-size: calc(16px + 2vw); font-weight: 600; margin-bottom: 20px; text-align: center;">
+    Website & UI/UX Design
+</div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Web Site Design</h4>
+                <p class="mb-0">
+                  We keep your desktops and workstations running smoothly, securely, and efficiently.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+        <img
+  src="images/misc/websiteDesign.png"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>UI/UX Design</h4>
+                <p class="mb-0">
+                  Join live workshops and labs to build practical skills in AI
+                  and machine learning.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/UI_UX.png"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+     
+            
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Website Resigning Support</h4>
+                <p class="mb-0">
+                  We provide reliable end-user support to quickly resolve technical issues, ensuring seamless productivity and a hassle-free IT experience.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+            <img
+  src="images/misc/websiteResigning.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Email Solutions-->
+<section id="section-why-attend" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+ <div class="wow fadeInUp" data-wow-delay=".2s"
+                         style="font-size: 40px; font-weight: 600; margin-bottom: 40px;">
+  <!-- Left Aligned Heading -->
+  <h2 class="wow fadeInUp" data-wow-delay=".2s">Web App Development</h2>
+
+  <!-- Bullet Points with Blue Ticks -->
+  <ul class="lead wow fadeInUp" data-wow-delay=".3s" style="list-style: none; padding-left: 0; margin-top: 20px; margin-bottom: 5px;">
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      End-to-end email solutions for seamless business communication.
+    </li>
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Secure email hosting with advanced collaboration tools.
+    </li>
+    <li style="display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Reliable, secure, and high-performance services.
+    </li>
+  </ul>
+  
+</div>
+
+      <!-- 🔽 Removed spacer or made it smaller -->
+      <div class="spacer-single" style="height:20px;"></div>  
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>E-commerce Application</h4>
+                <p class="mb-0">
+                 We provide reliable server maintenance to ensure secure, efficient, and uninterrupted business operations.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+            <img
+  src="images/misc/ECommerce.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+<div class="col-lg-4 col-md-6">
+  <div class="hover">
+    <div
+      class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+    >
+      <div class="abs p-40 bottom-0 z-2">
+        <div class="relative wow fadeInUp">
+          <h4>School Management Application</h4>
+          <p class="mb-0">
+            We provide firewall maintenance to keep your network secure, protected, and running without interruptions.
+          </p>
+        </div>
+      </div>
+      <div class="gradient-edge-bottom h-100"></div>
+    <img
+  src="images/misc/SchoolManagement.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+      <div
+        class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+      ></div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Hospital Management</h4>
+                <p class="mb-0">
+                 We provide expert cloud maintenance to keep your AWS, Azure, or GCP infrastructure secure, optimized, and reliable.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+          <img
+  src="images/misc/HospitalManagement.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+  <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Real Estate Management</h4>
+                <p class="mb-0">
+                 We offer end-to-end real estate management solutions, ensuring your properties are efficiently maintained, profitable, and compliant with industry standards.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+  <img
+  src="images/misc/RealEstate.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Tourism Management</h4>
+                <p class="mb-0">
+                 We deliver comprehensive tourism management solutions to create seamless, engaging, and memorable travel experiences for your customers.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/Travel&Tourism.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Food Delivery Application</h4>
+                <p class="mb-0">
+                We build robust food delivery applications that ensure fast ordering, real-time tracking, and a seamless customer experience.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/FoodDelivery.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>LMS Management</h4>
+                <p class="mb-0">
+                We provide advanced LMS management solutions to streamline learning, track progress, and deliver engaging education experiences.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/LMS.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Event Management Application</h4>
+                <p class="mb-0">
+                 We develop smart event management applications to simplify planning, streamline registrations, and deliver seamless event experiences.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+<img
+  src="images/misc/EventManage.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Finance Application</h4>
+                <p class="mb-0">
+                  We provide reliable end-user support to quickly resolve technical issues, ensuring seamless productivity and a hassle-free IT experience.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+<img
+  src="images/misc/FinanceManagement.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+
+
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Email Solutions-->
+<section id="section-why-attend" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+    <div class="wow fadeInUp" data-wow-delay=".2s"
+                         style="font-size: 40px; font-weight: 600; margin-bottom: 40px;">
+  <!-- Left Aligned Heading -->
+ <h2 class="wow fadeInUp" data-wow-delay=".2s">Mobile App Development</h2>
+
+  <ul class="lead wow fadeInUp" data-wow-delay=".3s" style="list-style: none; padding-left: 0; margin-top: 20px; margin-bottom: 5px;">
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Native and cross-platform apps built for smooth performance on iOS and Android.
+    </li>
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+     User-friendly designs that keep your audience engaged and coming back.
+    </li>
+    <li style="display: flex; align-items: center;">
+      <span style="color: #007bff; font-size: 20px; margin-right: 10px;">✔</span>
+      Secure apps with seamless integration to your existing systems and services.
+    </li>
+  </ul>
+</div>
+
+      <!-- 🔽 Removed spacer or made it smaller -->
+      <div class="spacer-single" style="height:20px;"></div>  
+
+        <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Android</h4>
+                <p class="mb-0">
+                 We provide reliable server maintenance to ensure secure, efficient, and uninterrupted business operations.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/AppDevelop.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>IOS</h4>
+                <p class="mb-0">
+                 We provide firewall maintenance to keep your network secure, protected, and running without interruptions.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/IOS.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Support</h4>
+                <p class="mb-0">
+                 We provide expert cloud maintenance to keep your AWS, Azure, or GCP infrastructure secure, optimized, and reliable.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+         <img
+  src="images/misc/AppSupport.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section-why-attend" class="bg-dark section-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-10 offset-lg-1 text-center">
+  <!-- New IT Support Heading -->
+<div class="subtitle wow fadeInUp" data-wow-delay=".2s"
+     style="font-size: calc(20px + 1.5vw); font-weight: 600; margin-bottom: 20px; text-align: center;">
+    Our Marketing Services
+</div>
+
+
+  <p class="lead mb-0 wow fadeInUp"
+     style="max-width: 1000px; margin: 0 auto; font-size: px; line-height: 1.6; text-align: center;">
+    At <strong>Anantha Medha InfoTech</strong>, we offer expert digital marketing solutions including SEO, social media marketing (SMM), and targeted lead generation. Maximize your reach with effective PPC, CPC campaigns, and optimized online ads.
+  </p>
+</div>
+
+
+
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Search Engine Optimization</h4>
+                <p class="mb-0">
+                 We optimize your website to rank higher on search engines, driving more traffic and boosting visibility.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+          <img
+  src="images/misc/searchEngine.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Pay-Per-Click Advertising</h4>
+                <p class="mb-0">
+                  We create targeted ad campaigns to drive instant traffic, generate leads, and maximize ROI.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+            <img
+  src="images/misc/payperclick.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Social Media Marketing</h4>
+                <p class="mb-0">
+                We promote your brand across platforms like Facebook, Instagram, and LinkedIn to engage your audience effectively.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+        <img
+  src="images/misc/Socialmedia.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Content Marketing</h4>
+                <p class="mb-0">
+                We create engaging blogs, videos, and infographics to attract, educate, and retain your target audience.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+          <img
+  src="images/misc/ContentMarketing.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Email Marketing</h4>
+                <p class="mb-0">
+                 We design personalized email campaigns to nurture leads, increase engagement, and drive conversions.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/EmailMarket.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="hover">
+          <div
+            class="bg-dark-2 relative rounded-1 overflow-hidden hover-bg-color hover-text-light wow scale-in-mask"
+          >
+            <div class="abs p-40 bottom-0 z-2">
+              <div class="relative wow fadeInUp">
+                <h4>Affilate & Influncer Marketing</h4>
+                <p class="mb-0">
+                  We collaborate with affiliates and influencers to expand your brand reach and drive targeted traffic.
+                </p>
+              </div>
+            </div>
+            <div class="gradient-edge-bottom h-100"></div>
+           <img
+  src="images/misc/Affilated.jpg"
+  class="w-100 hover-scale-1-1"
+  alt=""
+  style="filter: brightness(30%) contrast(120%);"
+/>
+            <div
+              class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+        <section class="bg-dark section-dark text-light pt-80 relative jarallax" aria-label="section">
+            <img src="images/background/2.webp" class="jarallax-img" alt="">
+            <div class="gradient-edge-top"></div>
+            <div class="gradient-edge-bottom"></div>
+            <div class="sw-overlay op-8"></div>
+            <div class="container relative z-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-4">
+                        <div class="relative w-100 d-inline-block pe-5">
+                            <div class="abs bg-color w-80px h-80px rounded-1 text-center end-0 z-2 wow scaleIn">
+                                <i class="icofont-quote-left text-white fs-40 d-block pt-3"></i>
+                            </div>
+                            <img src="images/misc/s9.webp" class="w-100 rounded-1 wow scale-in-mask" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <h3 class="fs-32 mb-4 wow fadeInUp">“Artificial intelligence is advancing rapidly, and while it offers immense opportunity, it also poses significant risks. If not properly regulated and aligned with human values, AI could become a fundamental threat to civilization.”</h3>
+
+                        <span>Elon Musk</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="section-speakers" class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 relative z-3">
+                          <div class="text-center">
+                              <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Speakers</div>
+                              <h2 class="wow fadeInUp" data-wow-delay=".2s">Meet the Visionaries</h2>
+                              <p class="lead wow fadeInUp">Whether it's a quick refresh or a deep clean transformation, our expert touch leaves your home or office shining.</p>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="hover relative rounded-1 overflow-hidden wow fadeIn scale-in-mask">
+                            <img src="images/team/1.webp" class="w-100 hover-scale-1-1" alt="">
+                            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+                            <div class="abs w-100 start-0 bottom-0 z-3">
+                                <div class="bg-blur p-4 m-4 rounded-1 text-light text-center relative z-2">
+                                    <h3 class="mb-0">Joshua Henry</h3>
+                                    <span>Chief AI Scientist, OpenAI</span>
+                                </div>
+                                <div class="gradient-edge-bottom h-100 op-8"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="hover relative rounded-1 overflow-hidden wow fadeIn scale-in-mask">
+                            <img src="images/team/2.webp" class="w-100 hover-scale-1-1" alt="">
+                            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+                            <div class="abs w-100 start-0 bottom-0 z-3">
+                                <div class="bg-blur p-4 m-4 rounded-1 text-light text-center relative z-2">
+                                    <h3 class="mb-0">Leila Zhang</h3>
+                                    <span>VP of Machine Learning, Google</span>
+                                </div>
+                                <div class="gradient-edge-bottom h-100 op-8"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="hover relative rounded-1 overflow-hidden wow fadeIn scale-in-mask">
+                            <img src="images/team/3.webp" class="w-100 hover-scale-1-1" alt="">
+                            <div class="abs w-100 h-100 start-0 top-0 hover-op-1 radial-gradient-color"></div>
+                            <div class="abs w-100 start-0 bottom-0 z-3">
+                                <div class="bg-blur p-4 m-4 rounded-1 text-light text-center relative z-2">
+                                    <h3 class="mb-0">Carlos Rivera</h3>
+                                    <span>Founder & CEO, NeuralCore</span>
+                                </div>
+                                <div class="gradient-edge-bottom h-100 op-8"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+-->
+
+<style>
+/* Marquee effect */
+.logo-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(200%); /* because we duplicated the logos */
+  animation: scroll-left 40s linear infinite;
+}
+
+.logo-track img {
+  height: 100px; /* adjust as needed */
+  width: auto;
+  flex-shrink: 0;
+  display: block; /* ensures no extra space */
+}
+
+/* Smooth infinite scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: Remove dark tint on images */
+.section-dark .logo-marquee img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+</style>
+
+
+<section id="section-process" class="bg-dark section-dark text-light py-5">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="row g-4 gx-5 justify-content-center">
+      <div class="col-lg-8 text-center">
+<div class="subtitle wow fadeInUp"
+     data-wow-delay=".2s"
+     style="font-size: clamp(20px, 3vw, 40px); font-weight: 600; margin-bottom: 20px; text-align: center;">
+  Our Systematic 6-D Process
+</div>
+
+         <p class="lead mb-0 wow fadeInUp"
+   style="max-width: 1000px; margin: 0 auto; font-size: 18px; line-height: 1.6; text-align: center;">
+   At <strong>Anantha Medha InfoTech</strong>, we follow a systematic process from planning to execution. Our approach ensures efficiency, transparency, and reliable results.
+</p>
+
+      </div>
+    </div>
+
+    <!-- Process Steps -->
+    <div class="container">
+    <div class="row g-4 justify-content-center text-start wow fadeInUp" data-wow-delay=".6s">
+
+      <!-- Step 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="p-4 rounded-3 h-100">
+          <h1 style="font-size:70px; font-weight:700; color:#4fc3f7; opacity:0.2;">01.</h1>
+          <h3 class="fw-bold mt-n4">Discover</h3>
+          <p>We begin by understanding your business goals, challenges, and requirements. 
+            This helps us discover what truly matters — so we can design solutions that make an impact.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="p-4 rounded-3 h-100">
+          <h1 style="font-size:70px; font-weight:700; color:#4fc3f7; opacity:0.2;">02.</h1>
+          <h3 class="fw-bold mt-n4">Define</h3>
+          <p>In this phase, we define the project scope, objectives, and deliverables. 
+            We create a clear roadmap that ensures alignment between your vision and our execution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="p-4 rounded-3 h-100">
+          <h1 style="font-size:70px; font-weight:700; color:#4fc3f7; opacity:0.2;">03.</h1>
+          <h3 class="fw-bold mt-n4">Design</h3>
+          <p>Our creative and technical teams collaborate to design visually appealing and user-friendly 
+            interfaces, ensuring your digital presence looks great and performs even better.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="p-4 rounded-3 h-100">
+          <h1 style="font-size:70px; font-weight:700; color:#4fc3f7; opacity:0.2;">04.</h1>
+          <h3 class="fw-bold mt-n4">Develop</h3>
+          <p>We turn designs into functional, high-performing solutions using the latest technologies. 
+            Our focus is on building secure, scalable, and efficient systems that deliver real results.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="p-4 rounded-3 h-100">
+          <h1 style="font-size:70px; font-weight:700; color:#4fc3f7; opacity:0.2;">05.</h1>
+          <h3 class="fw-bold mt-n4">Deploy</h3>
+          <p>Once development and testing are complete, we deploy the solution in a live environment. 
+            We ensure a seamless launch with zero downtime and complete functionality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="p-4 rounded-3 h-100">
+          <h1 style="font-size:70px; font-weight:700; color:#4fc3f7; opacity:0.2;">06.</h1>
+          <h3 class="fw-bold mt-n4">Deliver</h3>
+          <p>After deployment, we continue to support and monitor performance. 
+            We believe delivery isn’t the end — it’s the beginning of a long-term partnership focused on your success.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+    <!--
+        <section  id="section-faq" class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Everything You Need to Know</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="accordion s2 wow fadeInUp">
+                            <div class="accordion-section">
+                                <div class="accordion-section-title" data-tab="#accordion-a1">
+                                    What is the AI Summit 2025?
+                                </div>
+                                <div class="accordion-section-content" id="accordion-a1">
+                                    The AI Summit 2025 is a premier event gathering leading AI experts, thought leaders, and innovators. It features keynotes, workshops, panels, and networking opportunities focusing on the latest advancements in artificial intelligence.
+                                </div>
+
+                                <div class="accordion-section-title" data-tab="#accordion-a2">
+                                    When and where will the event be held?
+                                </div>
+                                <div class="accordion-section-content" id="accordion-a2">
+                                    The AI Summit 2025 will take place from **[Event Dates]** at **[Event Location]**. More details about the venue and directions will be provided closer to the event.
+                                </div>
+
+                                <div class="accordion-section-title" data-tab="#accordion-a3">
+                                    How can I register for the event?
+                                </div>
+                                <div class="accordion-section-content" id="accordion-a3">
+                                    You can register for the AI Summit 2025 through our official website. Simply choose your ticket type and fill out the registration form.
+                                </div>
+
+                                <div class="accordion-section-title" data-tab="#accordion-a4">
+                                    What ticket options are available?
+                                </div>
+                                <div class="accordion-section-content" id="accordion-a4">
+                                    We offer a range of ticket options, including Standard, VIP, Full Access Pass, Student, and Virtual tickets. You can find more details about each ticket type on our [Tickets Page](#).
+                                </div>
+
+                                <div class="accordion-section-title" data-tab="#accordion-a5">
+                                    Can I transfer my ticket to someone else?
+                                </div>
+                                <div class="accordion-section-content" id="accordion-a5">
+                                    Tickets are non-transferable. If you are unable to attend, please contact our support team for assistance.
+                                </div>
+
+                                <div class="accordion-section-title" data-tab="#accordion-a6">
+                                    Will there be virtual participation?
+                                </div>
+                                <div class="accordion-section-content" id="accordion-a6">
+                                    Yes! For those who can’t attend in person, we offer a **Virtual Ticket**. This provides access to live-streamed sessions, workshops, and networking opportunities online.
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+<section class="section-dark pt-80 relative" aria-label="section">
+  <div class="gradient-edge-top"></div>
+  <div class="gradient-edge-bottom"></div>
+
+  <div class="container relative z-10">
+    <div class="row g-4">
+     <div class="subtitle wow fadeInUp" data-wow-delay=".2s"
+     style="font-size: calc(20px + 1.5vw); font-weight: 600; margin-bottom: 20px; text-align: center;">
+        Our Trusted Clients
+      </div>
+
+      <div class="col-md-12 wow fadeInUp">
+        <!-- Marquee wrapper -->
+        <div class="logo-marquee">
+          <div class="logo-track">
+            <img src="public/clients/img1.png" alt="">
+            <img src="public/clients/img2.png" alt="">
+            <img src="public/clients/img3.png" alt="">
+            <img src="public/clients/img4.png" alt="">
+            <img src="public/clients/img5.png" alt="">
+            <img src="public/clients/img6.png" alt="">
+            <img src="public/clients/img11.png" alt="">
+            <img src="public/clients/img12.png" alt="">
+            <img src="public/clients/img13.png" alt="">
+            <img src="public/clients/img14.png" alt="">
+            <img src="public/clients/img15.png" alt="">
+            <img src="public/clients/img16.jpg" alt="">
+            <img src="public/clients/img17.png" alt="">
+            <img src="public/clients/img18.png" alt="">
+            <img src="public/clients/img19.png" alt="">
+            <img src="public/clients/img20.png" alt="">
+            <!-- Repeat logos for smooth looping -->
+            <img src="public/clients/img1.png" alt="">
+            <img src="public/clients/img2.png" alt="">
+            <img src="public/clients/img3.png" alt="">
+            <img src="public/clients/img4.png" alt="">
+            <img src="public/clients/img5.png" alt="">
+            <img src="public/clients/img6.png" alt="">
+            <img src="public/clients/img11.png" alt="">
+            <img src="public/clients/img12.png" alt="">
+            <img src="public/clients/img13.png" alt="">
+            <img src="public/clients/img14.png" alt="">
+            <img src="public/clients/img15.png" alt="">
+            <img src="public/clients/img16.jpg" alt="">
+             <img src="public/clients/img17.png" alt="">
+            <img src="public/clients/img18.png" alt="">
+            <img src="public/clients/img19.png" alt="">
+            <img src="public/clients/img20.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .logo-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(2 * 1200px); /* Adjust based on total width of logos */
+  animation: scroll 20s linear infinite;
+}
+
+.logo-track img {
+  margin-right: 40px; /* space between logos */
+  height: 80px; /* adjust size as needed */
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+</style>
+
+        <section class="bg-dark section-dark text-light pt-80 relative jarallax" aria-label="section">
+            <img src="images/background/3.webp" class="jarallax-img" alt="">
+            <div class="gradient-edge-top"></div>
+            <div class="gradient-edge-bottom"></div>
+            <div class="sw-overlay op-8"></div>
+          <div class="container relative z-2">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Stay in the Loop</div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Join the Future of Innovation</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".4s">
+                      Making better things takes time. Drop us your email to stay in the know as we work to reduce our environmental impact. We'll share other exciting news and exclusive offers, too.
+                    </p>
+                </div>
+            </div>
+
+            <form class="row justify-content-center">
+              <div class="col-md-6 col-lg-4 mb-3 wow fadeInUp" data-wow-delay=".6s">
+                <input type="email" class="form-control form-control-lg text-center" placeholder="Enter Your Email Address" required>
+              </div>
+              <div class="col-auto mb-3 wow fadeInUp" data-wow-delay=".6s">
+                <button type="submit" class="btn bg-color text-light btn-lg px-4">SIGN UP</button>
+              </div>
+
+              <div class="col-12 text-center wow fadeInUp" data-wow-delay=".8s">
+                <div class="form-check d-flex justify-content-center mb-2">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="updatesCheck" checked>
+                  <label class="form-check-label" for="updatesCheck">
+                    Keep me updated on other news and exclusive offers
+                  </label>
+                </div>
+                <p class="small text-muted wow fadeInUp" data-wow-delay="1s">
+                  Note: You can opt-out at any time. See our <a href="#" class="text-decoration-underline">Privacy Policy</a> and <a href="#" class="text-decoration-underline">Terms</a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </section>
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section class="bg-dark section-dark text-light pt-80 relative" id="section-contact">
+  <div class="container relative z-2">
+    <div class="row g-4">
+
+      <!-- Left Side Info -->
+      <div class="col-lg-6">
+        <div class="subtitle">Get In Touch</div>
+        <h2 class="mb-4">We’re here to answer your <span class="text-gradient">questions.</span></h2>
+        <p class="mb-5">Have a question, suggestion, or just want to say hi?<br> We’re here and happy to hear from you!</p>
+
+        <!-- Mail Us -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon bg-color text-light rounded-3 p-3 me-3">
+            <i class="fa fa-envelope fa-lg"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Mail Us</h5>
+            <p class="mb-0">ananthamedhainfotech@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Call Us -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon bg-color text-light rounded-3 p-3 me-3">
+            <i class="fa fa-phone fa-lg"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Call Us</h5>
+            <p class="mb-0">+91 91 3373 3373</p>
+          </div>
+        </div>
+
+        <!-- Visit Us -->
+        <div class="d-flex align-items-start">
+          <div class="icon bg-color text-light rounded-3 p-3 me-3">
+            <i class="fa fa-map-marker-alt fa-lg"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Visit Us</h5>
+            <p class="mb-0">
+              Anantha Medha InfoTech, <br>
+              Sai Priya Colony<br>
+              Dhammaiguda, Telangana – 500083<br>
+              <strong>Landmark:</strong> Near HP Petrol Bunk
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 bg-dark-light">
+          <h4 class="mb-3">Get In Touch</h4>
+          <p class="mb-4">Fill out the form below and we’ll get back to you soon.</p>
+
+          <form id="contact-form">
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control form-control-lg" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control form-control-lg" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" name="phone" class="form-control form-control-lg" placeholder="Your Phone" required>
+            </div>
+            <div class="mb-3">
+              <select name="service" class="form-control form-control-lg" required>
+                <option value="" disabled selected>Select Service</option>
+                <option>IT Support</option>
+                <option>Email Solutions</option>
+                <option>EndPoint Security</option>
+                <option>RMM Tools</option>
+                <option>Website Designing</option>
+                <option>Web App Development</option>
+                <option>Mobile App Development</option>
+                <option>Digital Marketing</option>
+                <option>IT Recruitment</option>
+                <option>IT Outsourcing</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control form-control-lg" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn bg-color text-light btn-lg w-100">SEND MESSAGE</button>
+            <div id="form-status" style="margin-top:10px;color:#fff;"></div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize EmailJS
+  (function(){
+    emailjs.init("FHQVTuCqJAN-NevfP"); // Your Public Key
+  })();
+
+  const form = document.getElementById('contact-form');
+  const statusDiv = document.getElementById('form-status');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Send email via EmailJS
+    emailjs.sendForm('service_65q5vs6', 'template_y4lnftj', this)
+      .then(function(response) {
+        statusDiv.style.color = "lightgreen";
+        statusDiv.innerText = "Message sent successfully!";
+        form.reset();
+      }, function(error) {
+        statusDiv.style.color = "red";
+        statusDiv.innerText = "Failed to send message. Try again later.";
+        console.error('EmailJS Error:', error);
+      });
+  });
+</script>
+
+<style>
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .section-dark .d-flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-dark .d-flex {
+    flex-direction: column;
+  }
+  .section-dark .icon {
+    margin-bottom: 10px;
+  }
+}
+</style>
+
+<!-- Full Width Map Section 
+<section class="section-map pt-0">
+  <div class="container-fluid px-0">
+    <div class="row g-0">
+      <div class="col-12">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.708172049164!2d77.64116267519138!3d12.921287891507318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1591d124123b%3A0x123456789abcdef!2sSierra%20Cartel%2C%20HSR%20Layout%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<footer class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- About / Logo -->
+      <div class="col-lg-6">
+        <img src="images/logo.png" alt="Anantha Medha InfoTech" class="mb-3" style="max-height:120px; width:auto; margin-left:60px;">
+        <p class="lead mb-0 wow fadeInUp" data-wow-delay=".4s"
+          style="max-width: 900px; font-size: 20px; line-height: 1.7;">
+          We are a vendor-neutral IT Infra Services & Solutions company. We specialize in providing Custom IT
+          solutions as per the business requirement.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3">
+        <h5 class="text-white mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-secondary text-decoration-none hover-link">Home</a></li>
+          <li><a href="#section-about" class="text-secondary text-decoration-none hover-link">About</a></li>
+          <li><a href="#section-why-attend" class="text-secondary text-decoration-none hover-link">Services</a></li>
+          <li><a href="/career" class="text-secondary text-decoration-none hover-link">Career</a></li>
+          <li><a href="#section-contact" class="text-secondary text-decoration-none hover-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Address -->
+      <div class="col-lg-3">
+        <h5 class="text-white mb-3">Address</h5>
+        <div class="d-flex align-items-start text-secondary mb-2">
+          <i class="fa-solid fa-map-marker-alt text-primary me-2 mt-1"></i>
+          <div>
+             Anantha Medha InfoTech, <br>
+              Sai Priya Colony<br>
+              Dhammaiguda, Telangana – 500083<br>
+              <strong>Landmark:</strong> Near HP Petrol Bunk
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center text-secondary mb-2">
+          <i class="fa-solid fa-envelope text-primary me-2"></i>
+          ananthamedhainfotech@gmail.com
+        </div>
+        <div class="d-flex align-items-center text-secondary">
+          <i class="fa-solid fa-phone text-primary me-2"></i>
+          +91 91 3373 3373
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Social + Bottom -->
+    <div class="border-top border-secondary mt-5 pt-4">
+
+      <!-- Social Icons (Centered) -->
+      <div class="mb-3 d-flex justify-content-center gap-3">
+        <a href="#" class="d-flex align-items-center justify-content-center bg-secondary rounded-circle text-light"
+          style="width:40px; height:40px;">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center bg-secondary rounded-circle text-light"
+          style="width:40px; height:40px;">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center bg-secondary rounded-circle text-light"
+          style="width:40px; height:40px;">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center bg-secondary rounded-circle text-light"
+          style="width:40px; height:40px;">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="text-secondary text-center mb-3">
+        <p class="mb-1">&copy; 2025 Anantha Medha InfoTech. All rights reserved.</p>
+      </div>
+
+      <!-- Policy Links -->
+      <div class="d-flex gap-2 flex-wrap justify-content-center">
+        <a href="#" class="text-secondary text-decoration-none hover-link">Privacy Policy</a>
+        <span>•</span>
+        <a href="#" class="text-secondary text-decoration-none hover-link">Terms of Service</a>
+        <span>•</span>
+        <a href="#" class="text-secondary text-decoration-none hover-link">Cookie Policy</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<style>
+.hover-link:hover {
+  color: var(--bs-primary) !important;
+  transition: 0.3s;
+}
+
+/* Responsive Footer Adjustments */
+@media (max-width: 768px) {
+  footer .row > div {
+    text-align: left !important;
+  }
+
+  footer .row > div img {
+    margin: 0 0 15px 0 !important;
+  }
+
+  footer .d-flex.align-items-start,
+  footer .d-flex.align-items-center {
+    justify-content: flex-start !important;
+  }
+
+  footer .border-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer .border-top .d-flex {
+    justify-content: center !important;
+  }
+
+  footer .border-top .text-center {
+    text-align: center !important;
+  }
+}
+</style>
+
+
+    
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/custom-marquee.js"></script>
+
+</body>
+
+</html>
