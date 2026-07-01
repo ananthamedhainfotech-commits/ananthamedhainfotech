@@ -6848,7 +6848,7 @@ footer .widget{
   border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags  a:hover border-color: #eceff3;
 }
 
 footer .widget {
